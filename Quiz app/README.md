@@ -52,13 +52,7 @@ Beginner-friendly, responsive layout.
 You can host using GitHub Pages:  
 `https://YogShri.github.io/quiz-app/`
 
-(Replace YOUR_USERNAME with your GitHub username)
-
 ---
-
-## 📸 Preview
-
-(Add screenshot of quiz UI here)
 
 ---
 
@@ -72,3 +66,4 @@ Front-End Developer
 ## ⭐ Like This Project?
 
 If this helped you, give the repo a **star ⭐**!
+
