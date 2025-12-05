@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional To-Do App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="app-container">
+        <h1 class="title">Task Manager</h1>
+
+        <div class="input-box">
+            <input type="text" id="taskInput" placeholder="Add a new task..." />
+            <button onclick="addTask()" class="add-btn">+</button>
+        </div>
+
+        <ul id="taskList" class="task-list"></ul>
+
+        <button class="clear-btn" onclick="clearAll()">Clear All</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
