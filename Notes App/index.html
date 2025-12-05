@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <header class="app-header">
+      <h1>📝 Notes App</h1>
+      <p class="subtitle">Create, search, pin and manage your notes.</p>
+    </header>
+
+    <section class="top-bar">
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search notes..."
+        />
+      </div>
+
+      <div class="toggle-box">
+        <label class="toggle">
+          <input type="checkbox" id="pinnedFilter" />
+          <span class="toggle-slider"></span>
+          <span class="toggle-label">Show pinned only</span>
+        </label>
+      </div>
+    </section>
+
+    <section class="new-note">
+      <input
+        type="text"
+        id="noteTitle"
+        placeholder="Note title"
+      />
+      <textarea
+        id="noteContent"
+        rows="3"
+        placeholder="Write your note here..."
+      ></textarea>
+      <button id="addNoteBtn">Add Note</button>
+    </section>
+
+    <section class="notes-grid" id="notesContainer">
+      <!-- Notes will be rendered here -->
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
