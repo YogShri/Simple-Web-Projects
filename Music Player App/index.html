@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <header class="header">
+      <h1>🎵 Music Player</h1>
+      <p class="subtitle">Play, pause, skip and enjoy your playlist.</p>
+    </header>
+
+    <main class="player">
+      <div class="cover-wrapper">
+        <img id="coverImage" src="covers/cover1.jpg" alt="Cover" />
+      </div>
+
+      <div class="track-info">
+        <h2 id="trackTitle">Track Title</h2>
+        <p id="trackArtist">Artist Name</p>
+      </div>
+
+      <div class="controls">
+        <span id="currentTime">00:00</span>
+
+        <input
+          type="range"
+          id="progressBar"
+          min="0"
+          max="100"
+          value="0"
+        />
+
+        <span id="duration">00:00</span>
+      </div>
+
+      <div class="buttons">
+        <button id="prevBtn" class="btn">
+          ⏮
+        </button>
+
+        <button id="playPauseBtn" class="btn primary">
+          ▶
+        </button>
+
+        <button id="nextBtn" class="btn">
+          ⏭
+        </button>
+      </div>
+    </main>
+
+    <section class="playlist">
+      <h3>Playlist</h3>
+      <ul id="playlistList">
+        <!-- Songs will be rendered here -->
+      </ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

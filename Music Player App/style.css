@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1f2937, #020617);
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 24px;
+  padding: 20px 18px 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  backdrop-filter: blur(18px);
+}
+
+/* Header */
+
+.header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.header h1 {
+  font-size: 24px;
+  letter-spacing: 0.03em;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+/* Player */
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.cover-wrapper {
+  width: 210px;
+  height: 210px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid rgba(129, 140, 248, 0.8);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.9);
+}
+
+.cover-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.track-info {
+  text-align: center;
+}
+
+#trackTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+#trackArtist {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Controls */
+
+.controls {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+
+#currentTime,
+#duration {
+  width: 40px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+#progressBar {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  border-radius: 999px;
+  background: #4b5563;
+  outline: none;
+}
+
+#progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #6366f1;
+  cursor: pointer;
+  border: 2px solid #e5e7eb;
+  margin-top: -4px;
+}
+
+#progressBar::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #6366f1;
+  cursor: pointer;
+  border: 2px solid #e5e7eb;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(75, 85, 99, 0.9);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, transform 0.08s, box-shadow 0.15s, border-color 0.15s;
+}
+
+.btn:hover {
+  background: rgba(55, 65, 81, 0.95);
+  border-color: rgba(129, 140, 248, 0.85);
+}
+
+.btn:active {
+  transform: scale(0.94);
+  box-shadow: none;
+}
+
+.btn.primary {
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  background: radial-gradient(circle at top left, #6366f1, #ec4899);
+  border: none;
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.6);
+}
+
+/* Playlist */
+
+.playlist {
+  margin-top: 10px;
+}
+
+.playlist h3 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #d1d5db;
+}
+
+#playlistList {
+  list-style: none;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+#playlistList li {
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 4px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  transition: background 0.14s, border-color 0.14s, transform 0.08s;
+}
+
+#playlistList li:hover {
+  background: rgba(31, 41, 55, 0.95);
+  border-color: rgba(129, 140, 248, 0.85);
+}
+
+#playlistList li span {
+  display: inline-block;
+}
+
+.track-name {
+  font-weight: 400;
+}
+
+.track-artist {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-left: 4px;
+}
+
+.badge {
+  font-size: 11px;
+  color: #a5b4fc;
+  opacity: 0;
+  transition: opacity 0.14s;
+}
+
+li.active {
+  border-color: #6366f1;
+  background: radial-gradient(circle at top left, rgba(129, 140, 248, 0.25), rgba(15, 23, 42, 0.98));
+  transform: translateY(-1px);
+}
+
+li.active .badge {
+  opacity: 1;
+}
+
+/* Scrollbar */
+
+#playlistList::-webkit-scrollbar {
+  width: 6px;
+}
+
+#playlistList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#playlistList::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 999px;
+}
