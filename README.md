@@ -49,6 +49,7 @@ Tech Used: **HTML, CSS, JavaScript (API Integration)**
 
 ---
 
+```bash
 ## 📁 Folder Structure
 ``
 📦 Mini_Projects
@@ -93,18 +94,18 @@ Tech Used: **HTML, CSS, JavaScript (API Integration)**
 │     └── config.js (optional: API key)
 │
 └── README.md
-
----
-
+```
+```bash
 ## 🎯 Purpose of This Repository
 ✔ Improve frontend development skills  
 ✔ Practice JavaScript logic and DOM manipulation  
 ✔ Build small real-world apps  
 ✔ Use in GitHub portfolio  
-✔ Helpful for placement & interviews  
+✔ Helpful for placement & interviews
+```
 
+```bash
 ---
-
 ## 🚀 How to Run
 Just clone the repository and open any **index.html** file in your browser:
 ``
@@ -112,7 +113,8 @@ git clone https://github.com/YogShri/Mini_Projects.git
 
 
 Then open any project folder → run **index.html**  
-
+```
+```bash
 ---
 
 ## 👨‍💻 Author
@@ -120,7 +122,7 @@ Then open any project folder → run **index.html**
 Full Stack Java Developer  
 
 ---
-
+```
 ## ⭐ Like This Repository?
 If you find these projects helpful, please ⭐ the repository to support my work!
 
