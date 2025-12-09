@@ -95,26 +95,22 @@ Tech Used: **HTML, CSS, JavaScript (API Integration)**
 │
 └── README.md
 ```
-```bash
 ## 🎯 Purpose of This Repository
 ✔ Improve frontend development skills  
 ✔ Practice JavaScript logic and DOM manipulation  
 ✔ Build small real-world apps  
 ✔ Use in GitHub portfolio  
 ✔ Helpful for placement & interviews
-```
 
-```bash
 ---
+
 ## 🚀 How to Run
 Just clone the repository and open any **index.html** file in your browser:
-``
+```bash
 git clone https://github.com/YogShri/Mini_Projects.git
-
+```
 
 Then open any project folder → run **index.html**  
-```
-```bash
 ---
 
 ## 👨‍💻 Author
