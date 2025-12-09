@@ -118,7 +118,6 @@ Then open any project folder → run **index.html**
 Full Stack Java Developer  
 
 ---
-```
 ## ⭐ Like This Repository?
 If you find these projects helpful, please ⭐ the repository to support my work!
 
