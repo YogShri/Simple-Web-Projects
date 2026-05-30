@@ -115,7 +115,6 @@ Then open any project folder → run **index.html**
 
 ## 👨‍💻 Author
 **Yogesh Kshirsagar**  
-Full Stack Java Developer  
 
 ---
 ## ⭐ Like This Repository?
