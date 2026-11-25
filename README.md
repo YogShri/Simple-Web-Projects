@@ -120,6 +120,12 @@ Then open any project folder → run **index.html**
 ## ⭐ Like This Repository?
 If you find these projects helpful, please ⭐ the repository to support my work!
 
+### GrowthX Off Campus Application
+
+My Off Campus Code: **AHD3UN**
+
+This repository contains projects built by me as part of my software development learning journey.
+
 
 
 
